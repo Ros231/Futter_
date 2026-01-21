@@ -1,6 +1,8 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_test/views/sign_in_ui.dart';
+import 'package:flutter_application_test/views/sign_up_ui.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -28,20 +30,29 @@ class Home extends StatelessWidget {
               height: 50,
             ),
             Text(
-              "Build Awesome App",
+              "Dew เบอร์ 5",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             Text(
-              "HAHAAAAAAAAAAAAAAAAAAAAAAAA",
+              "คนดีฃองแผ่นดิน ทำงานเก่ง รับใช้มวลชน",
               style: TextStyle(
                 fontSize: 15,
               ),
+            ),
+            SizedBox(
+              height: 50  ,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, 
+                    MaterialPageRoute(
+                      builder: (context) => SignIn(),
+                      )
+                    );
+                  },
                   child: Text(
                     "Login",
                     style: TextStyle(
@@ -55,11 +66,18 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ),
+                
                 SizedBox(
                   width: 20.0,
                 ),
+                
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                        MaterialPageRoute(builder: (context) => SignUp()
+                        ),
+                      );
+                    },
                     child: Text(
                       "Sign Up",
                       style: TextStyle(

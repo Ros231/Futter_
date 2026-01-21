@@ -20,6 +20,7 @@ class _Test_AppState extends State<Test_App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
       theme: ThemeData(
         textTheme: GoogleFonts.kanitTextTheme(
@@ -29,3 +30,4 @@ class _Test_AppState extends State<Test_App> {
     );
   }
 }
+
