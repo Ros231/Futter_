@@ -162,16 +162,10 @@ class _SignUpUiState extends State<SignUp> {
                         vertical: 15,
                         horizontal: 10,
                       ),
-
-                      suffixIcon: IconButton(
-                        onPressed: () {}, 
-                      icon: Icon(Icons.visibility_off),
-                      color: Colors.grey,
                       
                       )
                     ),
-                  ),
-
+                    
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
